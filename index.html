@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cow Clickerzzz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div id="player-name"></div>
+            <div id="time-elapsed"></div>
+        </div>
+        <div class="main">
+            <img id="clickable-cow" src="cow.png" alt="Kráva">
+            <div id="milk-counter">Mléko: 0 L</div>
+            <div id="purchased-cows"></div>
+            <div class="upgrades">
+                <button class="upgrade-button" id="multiplier-upgrade">Násobič (x0): 100 L</button>
+                <button class="upgrade-button" id="auto-clicker-upgrade">Auto Dojička (x0): 1000 L</button>
+                <button class="upgrade-button" id="new-cow-upgrade">Nová Kráva (x0): 1000000000 L</button>
+            </div>
+    </div>
+    <button id="toggle-sound"><img src="unmuted.png"></button>
+    <script src="script.js"></script>
+</body>
+</html>

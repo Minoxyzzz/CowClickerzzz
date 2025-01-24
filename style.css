@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    animation: backgroundAnimation 30s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-color: rgb(255, 200, 200); }
+    50% { background-color: rgb(200, 255, 200); }
+    100% { background-color: rgb(200, 200, 255); }
+}
+
+.game-container {
+    width: 600px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 10px;
+    position: absolute;
+    padding: 50px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+.main {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+.header {
+    position: absolute;
+    top: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#player-name, #time-elapsed {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#clickable-cow {
+    cursor: pointer;
+    width: 300px;
+    transition: transform 0.2s;
+    place-items: center;
+}
+
+#clickable-cow:active {
+    transform: scale(0.9);
+    place-items: center;
+}
+
+#milk-counter {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.upgrades {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upgrade-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.upgrade-button:hover {
+    background-color: #218838;
+}
+
+#toggle-sound {
+    background-color: #ffc107;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#toggle-sound:hover {
+    background-color: #e0a800;
+}
